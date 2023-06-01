@@ -1,0 +1,13 @@
+github:
+  repository:
+    url: ${GITHUB_REPOSITORY_URL}
+
+discord:
+  enable: true
+
+  bot:
+    token: ${DISCORD_BOT_TOKEN}
+    guild-id: ${DISCORD_BOT_GUILD_ID}
+    enable-intents: GUILD_MESSAGES, DIRECT_MESSAGES, MESSAGE_CONTENT
+    disable-caches: ACTIVITY, VOICE_STATE, EMOJI, STICKER, CLIENT_STATUS, ONLINE_STATUS, SCHEDULED_EVENTS
+    online-status: IDLE
