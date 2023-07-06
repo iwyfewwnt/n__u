@@ -22,6 +22,7 @@ import net.dv8tion.jda.api.events.interaction.command.MessageContextInteractionE
 import net.dv8tion.jda.api.interactions.commands.Command;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
+import net.dv8tion.jda.api.requests.restaction.interactions.ReplyCallbackAction;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -52,18 +53,18 @@ public final class GetUserMessageDiscordContextMenu implements IDiscordContextMe
 					.collect(Collectors.joining("\n"));
 		}
 
+		ReplyCallbackAction replyAction = event.deferReply(true);
+
 		if (bFollowup) {
 			String finalContent = content;
 
-			event.deferReply(true)
-					.queue(hook -> hook.sendMessage(finalContent)
-							.queue());
+			replyAction.queue(hook -> hook.sendMessage(finalContent)
+					.queue());
 
 			return;
 		}
 
-		event.deferReply(true)
-				.setContent(content)
+		replyAction.setContent(content)
 				.queue();
 	}
 }
