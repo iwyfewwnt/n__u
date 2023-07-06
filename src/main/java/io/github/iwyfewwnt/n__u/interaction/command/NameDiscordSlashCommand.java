@@ -16,8 +16,8 @@
 
 package io.github.iwyfewwnt.n__u.interaction.command;
 
-import io.github.iwyfewwnt.n__u.prelude.interaction.command.IDiscordSlashCommand;
-import io.github.iwyfewwnt.n__u.prelude.interaction.modal.IDiscordModal;
+import io.github.iwyfewwnt.jda.prelude.interaction.command.IDiscordSlashCommand;
+import io.github.iwyfewwnt.jda.prelude.interaction.modal.IDiscordModal;
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;

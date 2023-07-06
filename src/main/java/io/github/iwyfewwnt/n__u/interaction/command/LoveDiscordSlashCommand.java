@@ -16,8 +16,8 @@
 
 package io.github.iwyfewwnt.n__u.interaction.command;
 
-import io.github.iwyfewwnt.n__u.prelude.interaction.command.IDiscordSlashCommand;
-import io.github.iwyfewwnt.n__u.prelude.interaction.select.IDiscordSelectMenu;
+import io.github.iwyfewwnt.jda.prelude.interaction.command.IDiscordSlashCommand;
+import io.github.iwyfewwnt.jda.prelude.interaction.select.IDiscordSelectMenu;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.emoji.Emoji;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;

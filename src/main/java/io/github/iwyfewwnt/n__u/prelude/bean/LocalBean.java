@@ -14,12 +14,17 @@
  * limitations under the License.
  */
 
-package io.github.iwyfewwnt.n__u.prelude.interaction.context;
+package io.github.iwyfewwnt.n__u.prelude.bean;
 
-import net.dv8tion.jda.api.interactions.commands.build.CommandData;
+public final class LocalBean {
 
-public interface IDiscordContextMenu extends IDiscordUserContextInteraction,
-		IDiscordMessageContextInteraction {
+	// -- /prelude/property/GithubConfigurationProperties.java
+	public static final String GITHUB_REPOSITORY_CONFIGURATION_PROPERTIES = "githubRepositoryConfigurationProperties";
 
-	CommandData initDiscordContextMenuData();
+	// -- /prelude/property/GithubRepositoryConfigurationProperties.java
+	public static final String GITHUB_REPOSITORY_URL_CONFIGURATION_PROPERTY = "githubRepositoryUrlConfigurationProperty";
+
+	private LocalBean() {
+		throw new UnsupportedOperationException();
+	}
 }

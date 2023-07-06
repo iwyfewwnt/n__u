@@ -16,7 +16,7 @@
 
 package io.github.iwyfewwnt.n__u.prelude.property;
 
-import io.github.iwyfewwnt.n__u.prelude.bean.DiscordBean;
+import io.github.iwyfewwnt.n__u.prelude.bean.LocalBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.context.annotation.Bean;
@@ -31,12 +31,12 @@ public final class GithubConfigurationProperties {
 		this.repository = repository;
 	}
 
-	@Bean(DiscordBean.GITHUB_REPOSITORY_CONFIGURATION_PROPERTIES)
+	@Bean(LocalBean.GITHUB_REPOSITORY_CONFIGURATION_PROPERTIES)
 	public GithubRepositoryConfigurationProperties getRepository() {
 		return this.repository;
 	}
 
-	@Bean(DiscordBean.GITHUB_REPOSITORY_URL_CONFIGURATION_PROPERTY)
+	@Bean(LocalBean.GITHUB_REPOSITORY_URL_CONFIGURATION_PROPERTY)
 	public String getRepositoryUrl() {
 		return repository.getUrl();
 	}

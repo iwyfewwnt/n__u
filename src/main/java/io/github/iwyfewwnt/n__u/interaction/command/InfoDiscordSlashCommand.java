@@ -16,8 +16,8 @@
 
 package io.github.iwyfewwnt.n__u.interaction.command;
 
-import io.github.iwyfewwnt.n__u.prelude.bean.DiscordBean;
-import io.github.iwyfewwnt.n__u.prelude.interaction.command.IDiscordSlashCommand;
+import io.github.iwyfewwnt.jda.prelude.interaction.command.IDiscordSlashCommand;
+import io.github.iwyfewwnt.n__u.prelude.bean.LocalBean;
 import net.dv8tion.jda.api.entities.emoji.Emoji;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
@@ -33,7 +33,7 @@ public final class InfoDiscordSlashCommand implements IDiscordSlashCommand {
 
 	public InfoDiscordSlashCommand(
 			@Autowired(required = false)
-			@Qualifier(DiscordBean.GITHUB_REPOSITORY_URL_CONFIGURATION_PROPERTY)
+			@Qualifier(LocalBean.GITHUB_REPOSITORY_URL_CONFIGURATION_PROPERTY)
 			String githubRepositoryUrl
 	) {
 		if (githubRepositoryUrl == null

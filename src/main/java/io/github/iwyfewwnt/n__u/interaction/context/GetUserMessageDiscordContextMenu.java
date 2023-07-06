@@ -16,7 +16,7 @@
 
 package io.github.iwyfewwnt.n__u.interaction.context;
 
-import io.github.iwyfewwnt.n__u.prelude.interaction.context.IDiscordContextMenu;
+import io.github.iwyfewwnt.jda.prelude.interaction.context.IDiscordContextMenu;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.events.interaction.command.MessageContextInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.Command;
