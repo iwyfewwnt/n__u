@@ -37,7 +37,7 @@ public final class GetUserAvatarDiscordContextMenu implements IDiscordContextMen
 				.getEffectiveAvatarUrl();
 
 		event.deferReply(true)
-				.queue(hook -> hook.sendMessage(userAvatarUrl)
-						.queue());
+				.setContent(userAvatarUrl)
+				.queue();
 	}
 }
